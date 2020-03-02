@@ -1,4 +1,4 @@
-FROM nanoninja/php-fpm:7.4
+FROM nanoninja/php-fpm:7.4.0
 WORKDIR /web
 #RUN echo 'date.timezone = "Europe/Madrid"' > /usr/local/etc/php/conf.d/php-timezone.ini && \
 #ln -fs /usr/share/zoneinfo/Europe/Madrid /etc/localtime && dpkg-reconfigure -f noninteractive tzdata && \
