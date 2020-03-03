@@ -4,7 +4,7 @@ WORKDIR /web
 #ln -fs /usr/share/zoneinfo/Europe/Madrid /etc/localtime && dpkg-reconfigure -f noninteractive tzdata && \
 #apt update && apt install -y vim curl iputils-ping telnet && mv /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
 
-RUN apt update && apt install -y vim curl iputils-ping telnet && mv /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
+RUN apt update && apt install -y vim curl git iputils-ping telnet && mv /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
 
 #RUN DEBIAN_FRONTEND=noninteractive apt-get install -y locales && echo "es_ES.UTF-8 UTF-8" > /etc/locale.gen && dpkg-reconfigure --frontend=noninteractive locales && update-locale LANG=es_ES.UTF-8
 
